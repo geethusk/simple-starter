@@ -24,15 +24,12 @@
       }
 html,body,.option-section{
     height:100%;
-    
-
 }
 
 .option-section>img{
     margin-top:auto;
 }
 .option-section{
-    display: grid;
     text-align: center;
     color:white;
     Font-size: 17px;
@@ -42,10 +39,14 @@ h6{
 }
 
 footer {
+    font-size: 17px;
+    line-height: 25px;
     padding-top: 50px;
     margin-top:auto;
     color: white;
     text-align: center;
+    opacity: 0.25;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 li{
     list-style-type: none;
@@ -53,7 +54,11 @@ li{
     
 
 }
+.news{
+    font-size:16px;
+}
 p, .image-section {
+    font-size:24px;
     color: white;
     padding: 10px 0;
     display: grid;
@@ -62,9 +67,9 @@ p, .image-section {
     /* justify-items: start; */
     justify-content: start;
 }
-.support{
+/* .support{
    margin-top:auto;
-}
+} */
 ul{
     margin:auto;
     padding:0;
@@ -76,19 +81,30 @@ h4{
     color:white;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
+.heading{
+    color:#FFFFFF;
+    font-size:48px;
+}
 h1{
     color:#FFFFFF;
+    font-size:36px;
 }
-h2{ 
-    color:rgb(190, 12, 190);
-    font-size:40px;
+h3{ 
+    color:#A276FF;
+    font-size:96px;
 }
-h1,h2{
+.image-section img{
+    width:100%;
+    max-width:176px;
+}
+.heading,h3{
     font-family:'Segoe UI';
     font-style:normal;
 }
-li>h2{
+li h2{
     font-size:17px;
+    color:#A276FF;
+
 }
 .first-section{
     background-color: #0B0B0D80;
@@ -97,12 +113,13 @@ li>h2{
 
 }
 button{
-    font-size:12px;
+    margin-bottom:10px;
+    font-size:26px;
     font-style:bold;
     color:white;
     border-color: white;
-    padding: 10px 30px;
-    border-radius:8px;
+    padding: 10px 40px;
+    border-radius:12px;
     margin-right: auto; 
     background:none; 
 }
@@ -116,6 +133,7 @@ button{
 }
 .downward{ 
     height:20px;
+    padding-left:2px;
 }
 h6,h4{
     font-family: 'Segoe UI';
@@ -128,7 +146,40 @@ h4{
 }
 .support,.contact{
     text-align:center;
-    margin:auto;
+    margin:auto auto 0;
     padding:10px;
 }
+@media screen and (max-width: 800px){
+    .image-section{
+        grid-template-columns: repeat(2,auto);
+        padding:20px 0;
 
+    }
+    .first-section{
+        margin:0;
+        padding:25px;
+    }
+    .main-section{
+        padding:10px;
+    }
+    .heading{
+        font-size:  12px
+    }
+    h2{
+        font-size:18px;
+    }
+    li{
+        font-size:14px;
+    }
+    
+    h3{
+    font-size: 25px;
+    }
+    p{
+        font-size:14px;
+    }
+    button{
+        font-size:14px;
+    }
+    
+}
